@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.profile-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 370px;
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-card::before{
+  content: '';
+  background-color: #3a6ede;
+  height: 36%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+}
+
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.profile-card .text-data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #333;
+}
+
+.text-data .job{
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .name{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.icons-list{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons-list .facebook,.insta,.twitter,.youtube{
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.icons-list .facebook{
+  background-color: #1877F2;
+}
+.icons-list .insta{
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+
+}
+.icons-list .twitter{
+  background-color: #1DA1F2;
+}
+.icons-list .youtube{
+  background-color: #FF0000;
+}
+
+.buttons{
+  margin-top: 20px;
+}
+
+.buttons .Subscribe,.Message{
+  background-color: #3a6ede;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.analytics{
+  margin-top: 20px;
+  display: flex;
+  max-width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.analytics .like{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
